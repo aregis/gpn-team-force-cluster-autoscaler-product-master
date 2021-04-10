@@ -4,7 +4,7 @@ This project utilizes terraform and a Jenkins pipeline to deploy Cluster Autosca
 
 Helm is a very efficient package manager that can be used to deploy applications on Kubernetes clusters. The parameters and specifics of the installation is communicated to Kubernetes using a Helm Chart. Helm charts make package deployments easy, efficient, fast, and simple.
 
-Terraform is an infrastructure provisioning language built in go. Terraform allows repeatable and efficient deployment of infrastructure in a stateful manner. Terraform is integrated very well with AWS and is the single alternative to CloudFormation from AWS.
+Terraform is an infrastructure provisioning language built in go. Terraform allows repeatable and efficient deployment of infrastructure in a stateful manner. Terraform is integrated very well with AWS and is the single alternative to CloudFormation from AWS..
 
 This project will deploy Cluster Autoscaler, using Helm and Terraform. Below are the prerequisites and requirements needed to stand up the project and run.
 
