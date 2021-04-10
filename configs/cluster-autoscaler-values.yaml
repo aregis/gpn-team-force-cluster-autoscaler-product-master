@@ -1,0 +1,25 @@
+# Required inputs
+global:
+  region: us-east-2
+oidc:
+  cluster_identity_oidc_issuer: https://oidc.eks.us-east-2.amazonaws.com/id/4DBF2990BFCEAB298AB069EC5B46C039
+  cluster_identity_oidc_issuer_arn: arn:aws:iam::440766640997:oidc-provider/oidc.eks.us-east-2.amazonaws.com/id/4DBF2990BFCEAB298AB069EC5B46C039
+
+cluster:
+  name: gpn-team-force-demo-eks-cluster
+  enabled: true
+
+iam:
+  policy_name: "gpn-cluster-policy" 
+
+helm:
+  helm_chart_name: "cluster-autoscaler"
+  helm_chart_version: "9.7.0"
+  helm_release_name: "cluster-autoscaler"
+  helm_repo_url: "https://kubernetes.github.io/autoscaler"
+
+K8s:
+  k8s_namespace: "cluster-autoscaler"
+  k8s_service_account_name: "cluster-autoscaler"
+  mod_dependency: False
+  settings: {}
